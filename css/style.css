@@ -113,9 +113,11 @@
  .hamburger.active .bar:nth-child(3) {
      transform: translateY(-8px) rotate(-45deg);
  }
- #blidstart{
-   width: 100vw;
-  
+ #bildstart{
+  background-image: url(../img/startsidanhem.jpg);
+width: 100;
+height: 70rem;
+background-position: 50% 80%;
  }
 
 
@@ -132,7 +134,10 @@
     #box3 {
         opacity: 0;
     }
-  
+    #bildstart{
+        background-image: url(../img/startsidanhem.jpg);
+      background-position: center;
+       }
  }
 
  #box1{
@@ -169,7 +174,10 @@ h1{
     color: white;
 }
 #matbakrund{
-    background-image: url(../img/mat.jpg);
+    background-image: url(../img/mat2.jpg);
     height: 70rem;
     width: 100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
