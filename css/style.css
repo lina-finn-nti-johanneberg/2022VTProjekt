@@ -84,6 +84,7 @@
          transition: 0.3s;
          box-shadow:
              0 10px 27px rgba(0, 0, 0, 0.05);
+             z-index: 2;
      }
  
      .nav-menu.active {
@@ -122,10 +123,16 @@
   
   .header{
     background-color: rgb(255, 255, 255);
-    height: 5rem;
-} 
+    height: 5rem;}
 
-   
+
+ #box2 {
+        opacity: 0;
+    }
+    #box3 {
+        opacity: 0;
+    }
+  
  }
 
  #box1{
@@ -155,4 +162,14 @@ background: #174361;
   left: 10rem;
   top: 38rem;
 background: #174361;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+#matbakrund{
+    background-image: url(../img/mat.jpg);
+    height: 70rem;
+    width: 100;
 }
