@@ -113,13 +113,7 @@
  .hamburger.active .bar:nth-child(3) {
      transform: translateY(-8px) rotate(-45deg);
  }
- #bildstart{
-  background-image: url(../img/startsidanhem.jpg);
-width: 100vw;
-height: 70rem;
-background-position: 50% 80%;
-background-size:cover;
- }
+
 
 
  @media screen and (max-width: 768px) {
@@ -134,11 +128,6 @@ background-size:cover;
     }
     #box3 {
         opacity: 0;
-    }
-    #bildstart{
-        background-image: url(../img/startsidanhem.jpg);
-      background-position: center;
-      background-size:cover;
     }
  }
 
@@ -173,6 +162,7 @@ background: #174361;
 
 h1{
     text-align: center;
+    margin-top: 2rem;
     color: white;
 }
 #matbakrund{
@@ -188,4 +178,31 @@ h1{
 
 #collage {
     display: grid;
+    grid-template-areas: 
+    'b1 b2 b3'
+    'b4 b5';
+    display: flex;
+    justify-content: center;
+}
+
+.bild1 {
+    grid-area: b1;
+}
+
+.bild2 {
+    grid-area: b2;
+}
+
+.bild3 {
+    grid-area: b3;
+}
+.bild4 {
+    grid-area: b4;
+}
+.bild5 {
+    grid-area: b5;
+}
+
+.bild {
+    margin: 2rem;
 }
