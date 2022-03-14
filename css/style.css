@@ -9,6 +9,10 @@
      font-size: 62.5%;
      font-family: 'Roboto', sans-serif;
  }
+
+ body {
+     width: 100%;
+ }
  
  li {
      list-style: none;
@@ -70,6 +74,10 @@
      font-weight: 500;
      color: #000000;
  }
+
+ main img {
+     width: 100%;
+ }
  
  @media only screen and (max-width: 768px) {
      .nav-menu {
@@ -122,11 +130,16 @@
     background-color: rgb(255, 255, 255);
     height: 5rem;}
 
-
+#box1 {
+    display: none;
+    opacity: 0;
+}
  #box2 {
+    display: none;
         opacity: 0;
     }
     #box3 {
+        display: none;
         opacity: 0;
     }
  }
@@ -165,44 +178,97 @@ h1{
     margin-top: 2rem;
     color: white;
 }
-#matbakrund{
-    background-image: url(../img/mat2.jpg);
-    height: 70rem;
-    width: 100;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#överskrift {
+    text-align: center;
+    margin-top: 2rem;
+    color: #000;
 }
 
-
+#collagediv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 #collage {
     display: grid;
     grid-template-areas: 
     'b1 b2 b3'
-    'b4 b5';
-    display: flex;
-    justify-content: center;
+    'b4 b5 b6';
 }
 
-.bild1 {
+#bild1 {
     grid-area: b1;
 }
 
-.bild2 {
+#bild2 {
     grid-area: b2;
 }
 
-.bild3 {
+#bild3 {
     grid-area: b3;
 }
-.bild4 {
+#bild4 {
     grid-area: b4;
 }
-.bild5 {
+#bild5 {
     grid-area: b5;
+}
+
+#bild6 {
+    grid-area: b6;
 }
 
 .bild {
     margin: 2rem;
+}
+
+#collagelunchdiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#collagelunch{
+    display: grid;
+    grid-template-areas: 
+    'b7 b8';
+}
+#bild7{
+grid-area: b7;
+}
+#bild8{
+grid-area: b8;
+}
+.bildmat{
+    margin: 2rem;
+}
+@media screen and (max-width:1000px) {
+    #collage {
+        display: grid;
+        grid-template-areas: 
+        'b1 b2' 
+        'b3 b4'
+        'b6 b5';
+    } 
+}
+@media screen and (max-width:700px) {
+   .bild{
+       width: 15rem;
+       margin: 1rem;
+   }
+#bild5 {
+    display: none;
+} 
+#bild6 {
+    display: none;
+} 
+#bild4 {
+    display: none;
+} 
+#bild3 {
+    display: none;
+} 
+#collagediv{
+    width: 100%;
+}
 }
