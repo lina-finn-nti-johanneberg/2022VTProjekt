@@ -144,6 +144,20 @@
     }
  }
 
+ .h1stor{
+     color: #000;
+     text-align: center;
+margin-top: 2rem;
+font-size: 3rem;
+font-family: 'Abril Fatface', cursive;
+letter-spacing: 0.3rem;
+ }
+ p{
+     font-size: 1.5rem;
+     text-align: center;
+     margin: 7rem;
+ }
+
  #box1{
    position: absolute;
 width: 44rem;
@@ -210,6 +224,7 @@ margin-top: 0.8rem;
 #bild3 {
     grid-area: b3;
 }
+
 #bild4 {
     grid-area: b4;
 }
@@ -249,8 +264,13 @@ grid-area: b8;
         display: grid;
         grid-template-areas: 
         'b1 b2' 
-        'b3 b4'
-        'b6 b5';
+        'b3 b4';
+    } 
+    #bild5 {
+        display: none;
+    } 
+    #bild6 {
+        display: none;
     } 
 }
 @media screen and (max-width:700px) {
@@ -272,5 +292,9 @@ grid-area: b8;
 } 
 #collagediv{
     width: 100%;
+}
+.bildmat{
+    width: 15rem;
+       margin: 1rem;
 }
 }
