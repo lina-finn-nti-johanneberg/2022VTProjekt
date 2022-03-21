@@ -122,7 +122,9 @@
      transform: translateY(-8px) rotate(-45deg);
  }
 
-
+#logga{
+    height: 3rem;
+}
 
  @media screen and (max-width: 850px) {
   
@@ -372,9 +374,9 @@ grid-area: b8;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+/* .active, .dot:hover {
   background-color: #717171;
-}
+} */
 
 /* Fading animation */
 .fade {
