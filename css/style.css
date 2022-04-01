@@ -7,13 +7,13 @@
  
  html {
      font-size: 62.5%;
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Open Sans', sans-serif;
  }
 
  body {
      width: 100%;
  }
- 
+ /* hamburgemanyn */
  li {
      list-style: none;
  }
@@ -21,7 +21,8 @@
  a {
      text-decoration: none;
  }
- 
+
+
  .header{
      background-color: rgb(255, 255, 255);
      height: 8rem;
@@ -149,20 +150,29 @@
  }
 }
 
+/* Index starsidan: här nedan kommer allt i årddningen som det kommer på hemsida. */
  .h1stor{
      color: #000;
      text-align: center;
-margin-top: 2rem;
+margin-top: 4rem;
 font-size: 3rem;
-font-family: 'Abril Fatface', cursive;
-letter-spacing: 0.3rem;
+font-family: 'Roboto Slab', serif;
+
  }
+ 
  p{
      font-size: 1.5rem;
      text-align: center;
-     margin: 7rem;
+     font-family: 'Open Sans', sans-serif;
+     margin: 4rem 20rem 4rem 20rem;
  }
-
+ h2{
+     font-size: 2rem;
+     font-family: 'Roboto Slab', serif;
+     text-align: center;
+     margin-top: 4rem;
+ }
+/* här är boxaran med txt som bara syns på datorn.  */
  #box1{
    position: absolute;
 width: 44rem;
@@ -191,19 +201,16 @@ background: #174361;
   top: 40rem;
 background: #174361;
 }
-
+/* denna gäller bara på index texten i boxarna */
 h1{
     text-align: center;
 margin-top: 0.8rem;
     color: white;
     font-size: 4rem;
+}
 
-}
-#överskrift {
-    text-align: center;
-    margin-top: 2rem;
-    color: #000;
-}
+/* slut */
+
 
 #collagediv{
     display: flex;
@@ -245,6 +252,7 @@ margin-top: 0.8rem;
     margin: 2rem;
 }
 
+/*  mat och nöje  */
 #collagelunchdiv{
     display: flex;
     justify-content: center;
@@ -277,31 +285,6 @@ grid-area: b8;
     #bild6 {
         display: none;
     } 
-}
-@media screen and (max-width:700px) {
-   .bild{
-       width: 15rem;
-       margin: 1rem;
-   }
-#bild5 {
-    display: none;
-} 
-#bild6 {
-    display: none;
-} 
-#bild4 {
-    display: none;
-} 
-#bild3 {
-    display: none;
-} 
-#collagediv{
-    width: 100%;
-}
-.bildmat{
-    width: 15rem;
-       margin: 1rem;
-}
 }
 
 * {box-sizing:border-box}
@@ -397,4 +380,133 @@ grid-area: b8;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+/* test  */
+.image {
+    position: relative;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: #005e95;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin: 0.25em ;
+    
+}
+
+#pistkarta{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%;
+}
+
+#collageskiddiv{
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+#collageskid{
+    display: grid;
+    grid-template-areas: 
+    's1 s2 s3';
+}
+#ski1{
+grid-area: s1;
+}
+#ski2{
+    grid-area: s2;
+}
+#ski3{
+    grid-area: s3;
+}
+.bildski{
+    margin: 2rem;
+    height: 20rem;
+    width: 20rem;
+}
+#stjänor{
+    margin-top: 2rem;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%;
+}
+@media screen and (max-width:700px) {
+    .bild{
+        width: 15rem;
+        margin: 1rem;
+    }
+ #bild5 {
+     display: none;
+ } 
+ #bild6 {
+     display: none;
+ } 
+ #bild4 {
+     display: none;
+ } 
+ #bild3 {
+     display: none;
+ } 
+ #collagediv{
+     width: 100%;
+ }
+ .bildmat{
+     width: 15rem;
+        margin: 1rem;
+ }
+ p{
+     margin: 4rem;
+ }
+ .bildski{
+    margin: 2rem;
+    height: 7rem;
+    width: 7rem;
+ }
 }
