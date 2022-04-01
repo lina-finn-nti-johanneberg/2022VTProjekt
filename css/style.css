@@ -172,6 +172,9 @@ font-family: 'Roboto Slab', serif;
      text-align: center;
      margin-top: 4rem;
  }
+ #h2matnoje{
+     margin-bottom: 2rem;
+ }
 /* här är boxaran med txt som bara syns på datorn.  */
  #box1{
    position: absolute;
@@ -207,6 +210,7 @@ h1{
 margin-top: 0.8rem;
     color: white;
     font-size: 4rem;
+    font-family: 'Roboto Slab', serif;
 }
 
 /* slut */
@@ -431,6 +435,7 @@ grid-area: b8;
 .image__title {
     font-size: 2em;
     font-weight: bold;
+    font-family: 'Roboto Slab', serif;
 }
 
 .image__description {
