@@ -183,7 +183,9 @@ height: 6rem;
 left: 10rem;
 top: 20rem;
 background: #174361;
-
+display: flex;
+justify-content: center;
+align-items: center;
  }
  #box2{
   background-color: bisque;
@@ -192,7 +194,9 @@ background: #174361;
   position: absolute;
   left: 25rem;
 top: 30rem;
-
+display: flex;
+justify-content: center;
+align-items: center;
 background: #174361;
 }
 #box3{
@@ -203,11 +207,14 @@ background: #174361;
   left: 10rem;
   top: 40rem;
 background: #174361;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 /* denna gäller bara på index texten i boxarna */
 h1{
     text-align: center;
-margin-top: 0.8rem;
+padding: 20px;
     color: white;
     font-size: 4rem;
     font-family: 'Roboto Slab', serif;
