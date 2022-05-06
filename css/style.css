@@ -127,28 +127,7 @@
     height: 6rem;
 }
 
- @media screen and (max-width: 850px) {
-  
-  .header{
-    background-color: rgb(255, 255, 255);
-    height: 5rem;}
-
-#box1 {
-    display: none;
-    opacity: 0;
-}
- #box2 {
-    display: none;
-        opacity: 0;
-    }
-    #box3 {
-        display: none;
-        opacity: 0;
-    }
-    #logga{
-        height: 3rem;
- }
-}
+ 
 
 /* Index starsidan: här nedan kommer allt i årddningen som det kommer på hemsida. */
  .h1stor{
@@ -177,6 +156,7 @@ font-family: 'Roboto Slab', serif;
  }
 /* här är boxaran med txt som bara syns på datorn.  */
  #box1{
+     
    position: absolute;
 width: 44rem;
 height: 6rem;
@@ -189,12 +169,13 @@ align-items: center;
  }
  #box2{
   background-color: bisque;
+  
   height: 6rem;
   width: 14rem;
   position: absolute;
   left: 25rem;
 top: 30rem;
-display: flex;
+display:flex;
 justify-content: center;
 align-items: center;
 background: #174361;
@@ -222,7 +203,28 @@ padding: 20px;
 
 /* slut */
 
-
+@media screen and (max-width: 850px) {
+  
+    .header{
+      background-color: rgb(255, 255, 255);
+      height: 5rem;}
+  
+  #box1 {
+      display:none;
+      opacity: 0;
+  }
+   #box2 {
+      display: none;
+          opacity: 0;
+      }
+      #box3 {
+          display: none;
+          opacity: 0;
+      }
+      #logga{
+          height: 3rem;
+   }
+  }
 #collagediv{
     display: flex;
     justify-content: center;
